@@ -3,80 +3,24 @@
 <head>
     <title>Harsh Download Hub</title>
     <style>
-        body {
-            background: #0f0f0f;
-            color: #fff;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
+        body { background: #0f0f0f; color: #fff; font-family: Arial, sans-serif; text-align: center; margin: 0; }
+        .container { max-width: 900px; margin: auto; padding: 20px; }
+        .card {
+            background: #1f1f1f; padding: 20px; margin: 20px; border-radius: 10px;
+            transition: transform 0.2s; display: inline-block; width: 250px;
         }
-        .container {
-            max-width: 900px;
-            margin: auto;
-            padding: 20px;
-        }
-        h1 {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        .download-card {
-            background: #1f1f1f;
-            padding: 15px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            transition: transform 0.2s;
-        }
-        .download-card:hover {
-            transform: scale(1.02);
-        }
-        .download-card h2 {
-            margin-top: 0;
-        }
-        .download-card p {
-            font-size: 14px;
-            margin-bottom: 15px;
-        }
-        .download-card a {
-            background: #ff0000;
-            color: #fff;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 25px;
-            font-weight: bold;
-            transition: background 0.3s;
-        }
-        .download-card a:hover {
-            background: #cc0000;
+        .card:hover { transform: scale(1.05); }
+        .card a {
+            text-decoration: none; color: #fff; font-size: 20px; font-weight: bold;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>🔥 Harsh Download Hub 🔥</h1>
-
-        <div class="download-card">
-            <h2>Squid Game Season 3 - Part 1 (Video)</h2>
-            <p>Watch or download this video file.</p>
-            <a href="Squid_Game_S3_Part1.mp4" download>⬇️ Download Video</a>
-        </div>
-
-        <div class="download-card">
-            <h2>Important PDF Guide</h2>
-            <p>Download a complete guide in PDF format.</p>
-            <a href="guide.pdf" download>⬇️ Download PDF</a>
-        </div>
-
-        <div class="download-card">
-            <h2>Cool Wallpaper</h2>
-            <p>Download this high-quality image wallpaper.</p>
-            <a href="wallpaper.jpg" download>⬇️ Download Image</a>
-        </div>
-
-        <div class="download-card">
-            <h2>My Software Tool (ZIP)</h2>
-            <p>Get my latest software zip package.</p>
-            <a href="mytool.zip" download>⬇️ Download ZIP</a>
-        </div>
+        <div class="card"><a href="movies.html">🎬 Movies</a></div>
+        <div class="card"><a href="wallpapers.html">🖼️ Wallpapers</a></div>
+        <div class="card"><a href="software.html">💻 Software</a></div>
     </div>
 </body>
 </html>
