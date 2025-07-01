@@ -24,6 +24,7 @@
       justify-content: center;
       gap: 20px;
       margin-bottom: 20px;
+      flex-wrap: wrap;
     }
 
     .tab-btn {
@@ -82,28 +83,51 @@
   <div class="tabs">
     <button class="tab-btn active" onclick="showSection('movies')">Movies</button>
     <button class="tab-btn" onclick="showSection('music')">Music</button>
+    <button class="tab-btn" onclick="showSection('audio')">Audio</button>
   </div>
 
   <!-- Movies Section -->
   <div id="movies" class="section active">
     <h2>🎬 Movie 1</h2>
-
-    <!-- Play button opens video.html -->
     <a href="video.html" class="btn">▶️ Play Video in New Page</a>
     <br>
     <a href="video.mp4" download class="btn">⬇️ Download Movie</a>
+
+    <hr style="margin: 30px 0; border-color: rgba(255,255,255,0.3);">
+
+    <h2>🎬 Movie 2</h2>
+    <a href="video2.html" class="btn">▶️ Play Video 2 in New Page</a>
+    <br>
+    <a href="video2.mp4" download class="btn">⬇️ Download Movie 2</a>
   </div>
 
   <!-- Music Section -->
   <div id="music" class="section">
     <h2>🎵 Spongebob SFX</h2>
-
     <audio controls>
       <source src="a-few-moments-later-sponge-bob-sfx-fun.mp3" type="audio/mp3" />
       Aapka browser audio support nahi karta.
     </audio>
-
     <a href="a-few-moments-later-sponge-bob-sfx-fun.mp3" download class="btn">⬇️ Download Sound</a>
+  </div>
+
+  <!-- Audio Section -->
+  <div id="audio" class="section">
+    <h2>🎧 Relaxing Audio</h2>
+    <audio controls>
+      <source src="relaxing-audio.mp3" type="audio/mp3" />
+      Aapka browser audio support nahi karta.
+    </audio>
+    <a href="relaxing-audio.mp3" download class="btn">⬇️ Download Audio</a>
+
+    <hr style="margin: 30px 0; border-color: rgba(255,255,255,0.3);">
+
+    <h2>🎧 Nature Sound</h2>
+    <audio controls>
+      <source src="nature-sound.mp3" type="audio/mp3" />
+      Aapka browser audio support nahi karta.
+    </audio>
+    <a href="nature-sound.mp3" download class="btn">⬇️ Download Audio</a>
   </div>
 
   <script>
