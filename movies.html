@@ -1,60 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Movies - Harsh Hub</title>
-    <style>
-        body {
-            background: #0f0f0f;
-            color: #fff;
-            font-family: Arial, sans-serif;
-            margin: 0;
-        }
-        .container {
-            max-width: 900px;
-            margin: auto;
-            padding: 20px;
-        }
-        h1 {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        .download-card {
-            background: #1f1f1f;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            text-align: center;
-        }
-        .download-card h2 {
-            margin-top: 0;
-        }
-        .download-card a {
-            background: #ff0000;
-            color: #fff;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 25px;
-            font-weight: bold;
-            transition: background 0.3s;
-        }
-        .download-card a:hover {
-            background: #cc0000;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Movies - Stylish Website</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+      color: #fff;
+    }
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 30px;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    }
+    .movie-card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 20px;
+      margin: 20px;
+      width: 300px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .movie-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.5);
+    }
+    .movie-card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 30px;
+      font-size: 1.2rem;
+      color: white;
+      background: linear-gradient(45deg, #ff416c, #ff4b2b);
+      border-radius: 30px;
+      text-decoration: none;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .btn:hover {
+      transform: scale(1.08);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>🎬 Movies</h1>
+  <h1>🎬 Movie Collection</h1>
 
-        <div class="download-card">
-            <h2>Squid Game Season 3 - Part 1</h2>
-            <a href="Squid_Game_S3_Part1.mp4" download>⬇️ Download</a>
-        </div>
+  <div class="movie-card">
+    <h2>Squid Game Season 3 - Part 1</h2>
+    <a href="part1.html" class="btn">Watch Now</a>
+  </div>
 
-        <div class="download-card">
-            <h2>Another Movie</h2>
-            <a href="movie2.mp4" download>⬇️ Download</a>
-        </div>
-    </div>
+  <div class="movie-card">
+    <h2>Squid Game Season 3 - Part 2</h2>
+    <a href="part2.html" class="btn">Watch Now</a>
+  </div>
+
+  <div class="movie-card">
+    <h2>Squid Game Season 3 - Part 3</h2>
+    <a href="part3.html" class="btn">Watch Now</a>
+  </div>
+
+  <div class="movie-card">
+    <h2>Squid Game Season 3 - Part 4</h2>
+    <a href="part4.html" class="btn">Watch Now</a>
+  </div>
+
+  <div class="movie-card">
+    <h2>Squid Game Season 3 - Part 5</h2>
+    <a href="part5.html" class="btn">Watch Now</a>
+  </div>
+
+  <div class="movie-card">
+    <h2>Squid Game Season 3 - Part 6</h2>
+    <a href="part6.html" class="btn">Watch Now</a>
+  </div>
+
 </body>
 </html>
