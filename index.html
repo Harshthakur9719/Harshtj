@@ -2,122 +2,84 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Harsh Media Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My VIP Website</title>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #1f1c2c, #928dab);
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #0f0f0f;
       color: #fff;
-      line-height: 1.6;
-    }
-    header {
-      height: 100vh;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
-      text-align: center;
-      padding: 0 20px;
     }
-    header h1 {
-      font-size: 3rem;
-      margin-bottom: 20px;
-      animation: fadeIn 2s ease forwards;
+    h1 {
+      font-size: 2.8rem;
+      margin: 40px 0 20px 0;
+      font-weight: 600;
     }
-    header p {
-      font-size: 1.2rem;
-      margin-bottom: 30px;
-      max-width: 600px;
-      animation: fadeIn 3s ease forwards;
-    }
-    header a.button {
-      display: inline-block;
-      padding: 12px 30px;
-      font-size: 1rem;
-      color: #fff;
-      background: #ff4b2b;
-      border: none;
-      border-radius: 30px;
-      text-decoration: none;
-      transition: background 0.3s;
-      animation: fadeIn 4s ease forwards;
-    }
-    header a.button:hover { background: #ff416c; }
-    section {
-      padding: 60px 20px;
-      text-align: center;
-    }
-    section h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
-    .cards {
+    .container {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 20px;
+      gap: 30px;
+      margin-bottom: 60px;
     }
     .card {
-      background: rgba(255, 255, 255, 0.1);
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
       border-radius: 15px;
-      padding: 20px;
-      width: 250px;
-      transition: transform 0.3s;
-    }
-    .card:hover { transform: translateY(-10px); }
-    .card img {
-      width: 100%;
-      border-radius: 10px;
-      margin-bottom: 15px;
-      height: 150px;
-      object-fit: cover;
-    }
-    .card h3 { margin-bottom: 10px; }
-    footer {
-      padding: 20px;
+      padding: 30px 20px;
+      width: 220px;
       text-align: center;
-      background: rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s, box-shadow 0.3s;
     }
-    @keyframes fadeIn {
-      0% { opacity: 0; transform: translateY(20px); }
-      100% { opacity: 1; transform: translateY(0); }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.6);
+    }
+    .card h2 {
+      font-size: 1.4rem;
+      margin-bottom: 15px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 25px;
+      font-size: 1rem;
+      color: #fff;
+      background: #ff4b2b;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: background 0.3s, transform 0.2s;
+    }
+    .btn:hover {
+      background: #ff3a1a;
+      transform: scale(1.05);
     }
   </style>
 </head>
 <body>
+  <h1>Welcome to My Premium Site</h1>
 
-  <header>
-    <h1>Harsh Media Hub</h1>
-    <p>All your favorite Music, Movies, and Games at one place. Enjoy seamless entertainment with us!</p>
-    <a href="#explore" class="button">Explore Now</a>
-  </header>
-
-  <section id="explore">
-    <h2>Our Collections</h2>
-    <div class="cards">
-      <div class="card">
-        <img src="https://images.app.goo.gl/khuY5GBK17urSGkz5" alt="Music">
-        <h3>Music</h3>
-        <p>Listen to the best tracks and albums from your favorite artists.</p>
-      </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1581905764498-3d8d0a4e5f97" alt="Movies">
-        <h3>Movies</h3>
-        <p>Watch top-rated movies anytime and anywhere you want.</p>
-      </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1580128637421-cf1f34724119" alt="Games">
-        <h3>Games</h3>
-        <p>Play exciting games and enjoy thrilling adventures.</p>
-      </div>
+  <div class="container">
+    <div class="card">
+      <h2>Movies</h2>
+      <a href="movies.html" class="btn">Explore</a>
     </div>
-  </section>
-
-  <footer>
-    &copy; 2025 Harsh Media Hub. All rights reserved.
-  </footer>
-
+    <div class="card">
+      <h2>Wallpapers</h2>
+      <a href="wallpapers.html" class="btn">Explore</a>
+    </div>
+    <div class="card">
+      <h2>Apps</h2>
+      <a href="apps.html" class="btn">Explore</a>
+    </div>
+    <div class="card">
+      <h2>Music</h2>
+      <a href="music.html" class="btn">Explore</a>
+    </div>
+  </div>
 </body>
 </html>
