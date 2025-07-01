@@ -2,123 +2,84 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Harsh Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home - Stylish Cards</title>
   <style>
     body {
       margin: 0;
+      padding: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #121212;
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
       color: #fff;
     }
-    header {
-      background: linear-gradient(135deg, #ff0057, #2f2f2f);
-      padding: 60px 20px;
-      text-align: center;
+    h1 {
+      font-size: 2.2rem;
+      margin: 25px 0;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
     }
-    header h1 {
-      font-size: 3rem;
-      margin: 0;
-    }
-    header p {
-      font-size: 1.2rem;
-      margin-top: 10px;
-      color: #ddd;
-    }
-    .container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 20px;
-      padding: 40px 20px;
     }
     .card {
-      background: #1e1e1e;
-      border-radius: 10px;
-      overflow: hidden;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 20px;
+      width: 180px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
       transition: transform 0.3s, box-shadow 0.3s;
-      cursor: pointer;
     }
     .card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+      transform: scale(1.05);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
     }
-    .card img {
-      width: 100%;
-      height: 160px;
-      object-fit: cover;
-    }
-    .card-content {
-      padding: 15px;
-    }
-    .card-content h3 {
-      margin: 0;
+    .card h2 {
       font-size: 1.2rem;
+      margin-bottom: 15px;
     }
-    .card-content p {
+    .btn {
+      display: inline-block;
+      padding: 8px 18px;
       font-size: 0.9rem;
-      color: #aaa;
-      margin-top: 5px;
+      color: white;
+      background: linear-gradient(45deg, #ff416c, #ff4b2b);
+      border-radius: 20px;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
     }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #1a1a1a;
-      color: #777;
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.4);
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Harsh Hub</h1>
-    <p>Your ultimate source for Movies, Games & Music</p>
-  </header>
+  <h1>🚀 Welcome to My Website</h1>
 
-  <div class="container">
+  <div class="card-container">
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1598899134739-88e04c49b7d3" alt="Movie">
-      <div class="card-content">
-        <h3>Action Movie</h3>
-        <p>Latest action blockbuster you must watch!</p>
-      </div>
+      <h2>🎬 Movies</h2>
+      <a href="movies.html" class="btn">Open</a>
     </div>
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1580128637421-7a9d1cfc1aa1" alt="Game">
-      <div class="card-content">
-        <h3>New Game</h3>
-        <p>Exciting adventure game to play now.</p>
-      </div>
+      <h2>🖼️ Wallpapers</h2>
+      <a href="wallpapers.html" class="btn">Open</a>
     </div>
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2" alt="Music">
-      <div class="card-content">
-        <h3>Hit Album</h3>
-        <p>Enjoy the latest trending songs in this album.</p>
-      </div>
+      <h2>📱 Apps</h2>
+      <a href="apps.html" class="btn">Open</a>
     </div>
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1581090700227-4c4a6c63e0c3" alt="Tech">
-      <div class="card-content">
-        <h3>Tech Review</h3>
-        <p>Explore the newest gadgets and tech trends.</p>
-      </div>
-    </div>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1522202221252-5f30ebc1d3d8" alt="Motivation">
-      <div class="card-content">
-        <h3>Motivational Talk</h3>
-        <p>Get inspired and boost your energy today.</p>
-      </div>
-    </div>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1531497865144-0464b85f50cf" alt="Coding">
-      <div class="card-content">
-        <h3>Learn Coding</h3>
-        <p>Start your coding journey with easy tutorials.</p>
-      </div>
+      <h2>🎵 Music</h2>
+      <a href="music.html" class="btn">Open</a>
     </div>
   </div>
-
-  <footer>
-    &copy; 2025 Harsh Hub. All rights reserved.
-  </footer>
 </body>
 </html>
