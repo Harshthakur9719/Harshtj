@@ -1,29 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Wallpapers - Harsh Hub</title>
-    <style>
-        body { background: #0f0f0f; color: #fff; font-family: Arial, sans-serif; margin: 0; }
-        .container { max-width: 900px; margin: auto; padding: 20px; }
-        h1 { text-align: center; margin-bottom: 30px; }
-        .download-card { background: #1f1f1f; padding: 20px; margin-bottom: 20px; border-radius: 10px; text-align: center; }
-        .download-card a { background: #ff0000; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 25px; font-weight: bold; }
-        .download-card a:hover { background: #cc0000; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Music - Stylish Website</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+      color: #fff;
+    }
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 30px;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    }
+    .music-card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 20px;
+      margin: 20px;
+      width: 300px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .music-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.5);
+    }
+    .music-card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 30px;
+      font-size: 1.2rem;
+      color: white;
+      background: linear-gradient(45deg, #ff416c, #ff4b2b);
+      border-radius: 30px;
+      text-decoration: none;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .btn:hover {
+      transform: scale(1.08);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>🖼️ Wallpapers</h1>
+  <h1>🎵 Music Collection</h1>
 
-        <div class="download-card">
-            <h2>Cool Wallpaper 1</h2>
-            <a href="one.jpg" download>⬇️ Download</a>
-        </div>
+  <div class="music-card">
+    <h2>Calm Lo-fi Beats</h2>
+    <a href="music1.mp3" class="btn" download>Download</a>
+  </div>
 
-        <div class="download-card">
-            <h2>Nature Wallpaper</h2>
-            <a href="two.jpg" download>⬇️ Download</a>
-        </div>
-    </div>
+  <div class="music-card">
+    <h2>Party Anthem 2025</h2>
+    <a href="music2.mp3" class="btn" download>Download</a>
+  </div>
+
+  <div class="music-card">
+    <h2>Romantic Melody</h2>
+    <a href="music3.mp3" class="btn" download>Download</a>
+  </div>
+
+  <div class="music-card">
+    <h2>Energy Workout Track</h2>
+    <a href="music4.mp3" class="btn" download>Download</a>
+  </div>
+
 </body>
 </html>
